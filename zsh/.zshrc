@@ -12,7 +12,7 @@ ZSH_THEME="vortec"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -51,6 +51,13 @@ HISTSIZE=50000
 SAVEHIST=50000
 DIRSTACKSIZE=12
 
+# Local pip server
+export PIP_INDEX_URL=http://pdc.local:3443/simple
+
+# Virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=/Users/fkochem/workspace/virtualenvs
+#export PROJECT_HOME=/Users/fkochem/workspace/projects
 
 
 # VCS_INFO #
@@ -92,3 +99,5 @@ zstyle ':vcs_info:(svn|bzr):*' branchformat  '%b%F{1}:%F{3}%r'
 precmd () { vcs_info }
 PROMPT='%F{4}[%F{7}%n%F{4}@%F{2}%m%F{4}] %F{3}%3~ ${vcs_info_msg_0_}%f$ '
 RPROMPT='†: %F{7}%?'
+
+export PATH=$PATH:/usr/local/sbin
