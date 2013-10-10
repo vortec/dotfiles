@@ -40,7 +40,7 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git lol osx pip redis-cli sublime)
+plugins=(git lol osx pip redis-cli sublime zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,9 +56,10 @@ export PIP_INDEX_URL=http://pdc.local:3443/simple
 
 # Virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
-export WORKON_HOME=/Users/fkochem/workspace/virtualenvs
+#export WORKON_HOME=/Users/fkochem/workspace/virtualenvs
 #export PROJECT_HOME=/Users/fkochem/workspace/projects
-
+export WORKON_HOME=/opt/cate2/instances
+export GOPATH=/Users/fkochem/workspace/gopath
 
 # VCS_INFO #
 # ======== #
