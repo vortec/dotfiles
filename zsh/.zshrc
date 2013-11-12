@@ -40,7 +40,7 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git lol osx pip redis-cli sublime zsh-syntax-highlighting)
+plugins=(git lol pip redis-cli zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -51,15 +51,9 @@ HISTSIZE=50000
 SAVEHIST=50000
 DIRSTACKSIZE=12
 
-# Local pip server
-export PIP_INDEX_URL=http://pdc.local:3443/simple
 
 # Virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
-#export WORKON_HOME=/Users/fkochem/workspace/virtualenvs
-#export PROJECT_HOME=/Users/fkochem/workspace/projects
-export WORKON_HOME=/opt/cate2/instances
-export GOPATH=/Users/fkochem/workspace/gopath
 
 # VCS_INFO #
 # ======== #
@@ -98,7 +92,7 @@ zstyle ':vcs_info:*'           actionformats '%F{4}(%f%s%F{4})%F{3}-%F{4}[%F{2}%
 zstyle ':vcs_info:(svn|bzr):*' branchformat  '%b%F{1}:%F{3}%r'
 
 precmd () { vcs_info }
-PROMPT='%F{4}[%F{7}%n%F{4}@%F{2}%m%F{4}] %F{3}%3~ ${vcs_info_msg_0_}%f$ '
+PROMPT='%F{4}[%F{1}%n%F{4}@%F{2}%m%F{4}] %F{3}%3~ ${vcs_info_msg_0_}%f# '
 RPROMPT='†: %F{7}%?'
 
 export PATH=$PATH:/usr/local/sbin
