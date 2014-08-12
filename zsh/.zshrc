@@ -52,14 +52,17 @@ SAVEHIST=50000
 DIRSTACKSIZE=12
 
 # Local pip server
-export PIP_INDEX_URL=http://pdc.local:3443/simple
+export PIP_INDEX_URL="http://pypi.cat06.de/cat/pypi"
 
 # Virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 #export WORKON_HOME=/Users/fkochem/workspace/virtualenvs
 #export PROJECT_HOME=/Users/fkochem/workspace/projects
-export WORKON_HOME=/opt/cate2/instances
+export WORKON_HOME=/Users/fkochem/workspace/instances
 export GOPATH=/Users/fkochem/workspace/gopath
+
+# Numpad enter key in iTerm + zsh:
+bindkey -s "^[OM" "^M"
 
 # VCS_INFO #
 # ======== #
@@ -100,5 +103,13 @@ zstyle ':vcs_info:(svn|bzr):*' branchformat  '%b%F{1}:%F{3}%r'
 precmd () { vcs_info }
 PROMPT='%F{4}[%F{7}%n%F{4}@%F{2}%m%F{4}] %F{3}%3~ ${vcs_info_msg_0_}%f$ '
 RPROMPT='†: %F{7}%?'
+
+alias otp='ssh vortec@otp.me.uk'
+alias otptunnel='ssh vortec@otp.me.uk -D 4747'
+alias pdc='ssh root@pdc.local'
+alias dx='ssh root@dx.local'
+#alias ci='ssh root@ci.local'
+
+. ~/z.sh
 
 export PATH=$PATH:/usr/local/sbin

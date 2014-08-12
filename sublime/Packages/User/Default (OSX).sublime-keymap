@@ -1,2 +1,10 @@
 [
+    { "keys": ["super+y"], "command": "behave_step_finder" },
+    { "keys": ["ctrl+super+m"], "command": "match_step" },
+
+    { "keys": ["alt+tab"], "command": "next_group"},
+    { "keys": ["super+shift+o"], "command": "prompt_open_file_path"},
+
+    { "keys": ["home"], "command": "move_to", "args": {"to": "bol"} },
+    { "keys": ["end"], "command": "move_to", "args": {"to": "eol"} }
 ]

@@ -2,8 +2,10 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"Behat",
 		"Package Control",
-		"SublimeLinter",
+		"Python Improved",
+		"SublimeCodeIntel",
 		"Theme - Soda",
 		"Tomorrow Color Schemes"
 	]
