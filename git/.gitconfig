@@ -1,0 +1,49 @@
+[user]
+	name = Fabian Kochem
+	email = kochem@cat06.de
+
+[alias]
+	# Basic shortcuts:
+	cp = cherry-pick
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	dc = diff --cached
+
+	# Status including tag and branch info:
+	st = status -sb
+	
+	# Prettiest log output:
+	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset'
+
+	# Displays last commit date of all branches:
+	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)' 
+	
+	# Diff staged changes:
+	ds = diff --staged
+
+	# Resets:
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+
+	# Colored words shortcuts:
+	wdiff = diff --color-words
+	wshow = show --color-words
+	
+	# Stash shortcuts:
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+
+[diff]
+	# Display color depending on terminal:
+	color = auto
+
+[help]
+	# Run suggested command instead of aborting:
+	autocorrect = 1

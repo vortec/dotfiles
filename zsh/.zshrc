@@ -30,7 +30,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
- COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -40,7 +40,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git lol osx pip redis-cli sublime zsh-syntax-highlighting)
+plugins=(git pip redis-cli zsh-syntax-highlighting osx sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,10 +56,8 @@ export PIP_INDEX_URL="http://pypi.cat06.de/cat/pypi"
 
 # Virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
-#export WORKON_HOME=/Users/fkochem/workspace/virtualenvs
-#export PROJECT_HOME=/Users/fkochem/workspace/projects
-export WORKON_HOME=/Users/fkochem/workspace/instances
-export GOPATH=/Users/fkochem/workspace/gopath
+export WORKON_HOME=~/workspace/instances
+export GOPATH=~/workspace/gopath
 
 # Numpad enter key in iTerm + zsh:
 bindkey -s "^[OM" "^M"
