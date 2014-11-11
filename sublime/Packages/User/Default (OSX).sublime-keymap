@@ -6,5 +6,7 @@
     { "keys": ["super+shift+o"], "command": "prompt_open_file_path"},
 
     { "keys": ["home"], "command": "move_to", "args": {"to": "bol"} },
-    { "keys": ["end"], "command": "move_to", "args": {"to": "eol"} }
+    { "keys": ["end"], "command": "move_to", "args": {"to": "eol"} },
+
+    { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} }
 ]

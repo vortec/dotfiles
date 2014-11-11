@@ -3,9 +3,9 @@
 	"installed_packages":
 	[
 		"Behat",
+		"Indent XML",
 		"Package Control",
 		"Python Improved",
-		"SublimeCodeIntel",
 		"Theme - Soda",
 		"Tomorrow Color Schemes"
 	]

@@ -17,6 +17,8 @@ CASE_SENSITIVE="true"
 # Comment this out to disable bi-weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
 
+setopt no_share_history
+
 # Uncomment to change how often before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
 
@@ -107,6 +109,8 @@ alias otptunnel='ssh vortec@otp.me.uk -D 4747'
 alias pdc='ssh root@pdc.local'
 alias dx='ssh root@dx.local'
 #alias ci='ssh root@ci.local'
+alias dev='ssh developer.cat06.de'
+alias devvpn='ssh developer.manitu'
 
 . ~/z.sh
 
