@@ -29,7 +29,8 @@
 	"rulers":
 	[
 		72,
-		79
+		79,
+		120
 	],
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
