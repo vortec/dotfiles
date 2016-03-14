@@ -1347,36 +1347,56 @@
 	<false/>
 	<key>NSColorPanelMode</key>
 	<string>1</string>
-	<key>NSColorPickerPageableNameListDefaults</key>
-	<string>1Apple</string>
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 448}</string>
-	<key>NSNavPanelExpandedStateForSaveMode</key>
-	<true/>
+	<string>~/workspace/dotfiles/iterm</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>770 334 214 309 0 0 1920 1178 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1336 108 445 270 0 0 1920 1178 </string>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
+	<false/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>322</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>2784 466 605 485 1920 0 1920 1177 </string>
+	<string>470 504 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>392 749 384 129 0 0 1920 1178 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>2075 594 592 584 1920 0 1920 1178 </string>
+	<string>792 841 384 129 0 0 1920 1177 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>650 589 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1046 639 665 426 0 0 1920 1177 </string>
+	<string>504 503 665 411 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1920 31 1913 1146 1920 0 1920 1177 </string>
+	<string>370 379 1353 640 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>2021 549 1217 603 1920 0 1920 1177 </string>
+	<key>NeverWarnAboutShortLivedSessions_57AB95B9-7ED9-45AA-9543-D8A732CFDFF2</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_57AB95B9-7ED9-45AA-9543-D8A732CFDFF2_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2196,6 +2216,23 @@
 			<string>/Users/fkochem</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
+	<key>NoSyncLastTipTime</key>
+	<real>458811358.16385102</real>
+	<key>NoSyncNeverRemindPrefsChangesLost</key>
+	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>454852251.70963597</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>458466603.01861101</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2253,12 +2290,14 @@
 	<integer>3</integer>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/nightly.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-11-04T08:54:11Z</date>
+	<date>2015-07-17T07:35:57Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2286,11 +2325,11 @@
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Paste History</string>
+		<string>Command History</string>
+		<string>Recent Directories</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1408347904</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2314,6 +2353,8 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141022</string>
+	<string>2.9.20150711-nightly</string>
+	<key>kCommandHistoryHasEverBeenUsed</key>
+	<true/>
 </dict>
 </plist>
