@@ -1,6 +1,6 @@
 [user]
 	name = Fabian Kochem
-	email = kochem@cat06.de
+	email = fabian.kochem@grandcentrix.net
 
 [alias]
 	# Basic shortcuts:
@@ -47,3 +47,5 @@
 [help]
 	# Run suggested command instead of aborting:
 	autocorrect = 1
+[core]
+	excludesfile = ~/.gitignore

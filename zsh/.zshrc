@@ -42,7 +42,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git pip redis-cli zsh-syntax-highlighting osx sublime docker)
+plugins=(docker git httpie mix osx pip python redis-cli sublime zsh-autosuggestions zsh-completion zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,12 +57,15 @@ DIRSTACKSIZE=12
 #export PIP_INDEX_URL="http://pypi.cat06.de/cat/live"
 
 # Virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 export WORKON_HOME=~/workspace/instances
-export GOPATH=~/workspace/gopath
+#export GOPATH=~/workspace/gopath
 
 # Numpad enter key in iTerm + zsh:
 bindkey -s "^[OM" "^M"
+
+alias otp='ssh vortec@otp.me.uk'
+alias otptunnel='ssh vortec@otp.me.uk -D 4747'
 
 # VCS_INFO #
 # ======== #
@@ -104,14 +107,6 @@ precmd () { vcs_info }
 PROMPT='%F{4}[%F{7}%n%F{4}@%F{2}%m%F{4}] %F{3}%3~ ${vcs_info_msg_0_}%f$ '
 #RPROMPT='†: %F{7}%?'
 
-alias otp='ssh vortec@otp.me.uk'
-alias otptunnel='ssh vortec@otp.me.uk -D 4747'
-alias pdc='ssh root@pdc.local'
-alias dx='ssh root@dx.local'
-#alias ci='ssh root@ci.local'
-alias dev='ssh developer.cat06.de'
-alias devvpn='ssh developer.manitu'
-
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 
 . ~/z.sh
@@ -121,9 +116,5 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 source ~/.iterm2_shell_integration.`basename $SHELL`
-eval `docker-machine env default`
 
-export ZOOKEEPER_SERVERS=dx3test.cat.internal,docker.cat.internal,192.168.5.11
-export ZOOKEEPER_STAGE=development
-export ZOOKEEPER_ENVIRONMENT=FK
-export ZOOKEEPER_CLIENT=cat
+eval "$(pyenv init -)"
