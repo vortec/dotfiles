@@ -17,6 +17,8 @@ CASE_SENSITIVE="true"
 # Comment this out to disable bi-weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
 
+ZSH_DISABLE_COMPFIX="true"
+
 setopt no_share_history
 
 # Uncomment to change how often before auto-updates occur? (in days)
@@ -42,7 +44,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker git httpie mix osx pip python redis-cli sublime zsh-autosuggestions zsh-completion zsh-syntax-highlighting)
+plugins=(docker git httpie mix osx pip python redis-cli sublime zsh-autosuggestions zsh-completion syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,3 +120,11 @@ export LANG=en_US.UTF-8
 source ~/.iterm2_shell_integration.`basename $SHELL`
 
 eval "$(pyenv init -)"
+export PATH="/Users/vortec/homebrew/bin:$PATH"
+export PATH="/Users/vortec/homebrew/opt/libpq/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/vortec/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/vortec/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/vortec/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/vortec/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
